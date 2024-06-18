@@ -1,0 +1,570 @@
+html,
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* This is all Header code Start*/
+header {
+    background-color: #100e0e;
+    color: white;
+    padding: 10px;
+    z-index: 1;
+    position: relative;
+    top: 0;
+    width: 100%;
+}
+
+header img {
+    max-height: 40px;
+}
+
+.left-content {
+    position: absolute;
+    left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.left-content a {
+    color: white;
+    margin-left: 50px;
+    margin-right: 10px;
+}
+
+.login-signup-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.login-signup-buttons .btn {
+    border-radius: 20px;
+    border: none;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.signup-button {
+    transition: transform 0.3s ease;
+    background-color: #000000 !important;
+    background: none !important;
+    color: #858181 !important;
+    font-weight: bold !important;
+}
+
+.signup-button:hover {
+    transform: scale(1.1);
+}
+
+.login-button {
+    display: inline-block;
+    width: 80px;
+    font-weight: bold !important;
+    height: 35px;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.login-button:hover {
+    transform: scale(1.1);
+    color: #000000;
+}
+
+/* This is all Header code End*/
+/* This is all SideBar code Start*/
+#sidebar {
+    background-color: #110f0f;
+    color: white;
+    padding: 20px;
+    z-index: 1;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dark-big-line {
+    border: none;
+    height: 8px;
+    background-color: #000000;
+    margin: 20px 0;
+    border-radius: 50px;
+}
+
+#sidebar {
+    min-width: 352px;
+    transition: min-width 0.3s;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+#sidebarCollapse {
+    display: none;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#sidebarCollapse i {
+    font-size: 20px;
+}
+
+.sidebar {
+    width: 340px;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #131212;
+    position: fixed;
+    top: 8px;
+    left: 5px;
+    bottom: 5px;
+    padding-top: 20px;
+    overflow-y: auto;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 0px;
+}
+
+.sidebar li {
+    margin-bottom: 0;
+}
+
+.sidebar a {
+    display: block;
+    color: rgb(250, 250, 250);
+    padding: 16px;
+    text-decoration: none;
+    margin-left: 20px;
+    top: 1px;
+}
+
+.sidebar a:hover:not(.active) {
+    color: white;
+}
+
+.card-container::-webkit-scrollbar {
+    width: 6px;
+}
+
+.card-container::-webkit-scrollbar-track {
+    background: #383838;
+}
+
+.card-container::-webkit-scrollbar-thumb {
+    background: #383838;
+    border-radius: 10px;
+}
+
+.card-container::-webkit-scrollbar-thumb:hover {
+    background: #383838;
+}
+
+.card-siderbar {
+    background-color: rgb(44, 44, 44);
+    padding: 15px;
+    margin: 2px;
+    margin-bottom: 10px;
+    text-align: top;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    color: rgb(255, 243, 243);
+}
+
+.card-siderbar:nth-child(2) {
+    background-color: rgb(32, 32, 32);
+    color: #fffefe;
+}
+
+.card-container::-webkit-scrollbar {
+    width: 10px;
+}
+
+.card-container::-webkit-scrollbar-track {
+    background: #383838;
+}
+
+.card-container::-webkit-scrollbar-thumb {
+    background: #383838;
+    border-radius: 10px;
+}
+
+.card-container::-webkit-scrollbar-thumb:hover {
+    background: #383838;
+}
+
+.card-container {
+    max-height: 210px;
+    overflow-y: auto;
+    padding: 0 10px;
+}
+
+.my-button {
+    background-color: transparent;
+    border: none;
+    color: #ded2d2;
+    font-size: 11px;
+    cursor: pointer;
+    padding: 8px;
+    margin-top: 12px;
+}
+
+.globe {
+    border-radius: 50px;
+    border: none;
+    background-color: #000000;
+}
+
+/* This is all SideBar code End*/
+/* This is all Main Content code Start*/
+#wrapper {
+    display: flex;
+    flex-grow: 1;
+    color: #fff;
+    background-color: #161313;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#wrapper.toggled #sidebar {
+    min-width: 0;
+}
+
+#content {
+    flex-grow: 1;
+    text-align: center;
+    margin-left: 350px;
+}
+
+h4 {
+    font-weight: bold !important;
+}
+
+/* first row style for .artist */
+.image-container {
+    position: relative;
+    background-color: transparent;
+    transition: background-color 0.5s ease;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 80px;
+}
+
+.overlay::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(53, 47, 47, 0.5);
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.artist:hover ::before {
+    opacity: 1;
+}
+
+a {
+    color: #a1a0a0 !important;
+    text-decoration: none !important;
+}
+
+.play-icon {
+    position: absolute;
+    bottom: 105px;
+    right: 16px;
+    width: 50px !important;
+    height: 50px !important;
+    display: none;
+}
+
+.artist:hover .play-icon {
+    display: block;
+}
+
+.artist>* {
+    position: relative;
+    z-index: 1;
+}
+
+.left-aligned-p {
+    text-align: left;
+    margin-bottom: 0.5rem;
+    /* Adjust as needed */
+}
+
+.left-aligned-p1 {
+    text-align: left;
+    color: #a1a0a0;
+    margin-top: 0.25rem;
+    /* Adjust as needed */
+    font-size: 12px;
+}
+
+.left-aligned-p2 {
+    color: #a1a0a0;
+    margin-top: 0.25rem;
+    font-size: 15px;
+}
+
+/* first row style for .artist end */
+/* second row style for albums */
+.image-container1 img {
+    width: 100%;
+    height: auto;
+}
+
+/* second row style for albums end*/
+/* Third row style for albums */
+.image-container2 img {
+    width: 100%;
+    height: auto;
+}
+
+.play-icon1 {
+    position: absolute;
+    bottom: 135px;
+    right: 16px;
+    width: 50px !important;
+    height: 50px !important;
+    display: none;
+}
+
+.artist1:hover .play-icon1 {
+    display: block;
+}
+
+/* Third row style for albums end*/
+/* .artist {
+    position: relative;
+    text-align: center;
+    overflow: hidden; 
+}
+.artist::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(53, 47, 47, 0.5);
+    z-index: 0; 
+    opacity: 0; 
+    transition: opacity 0.5s ease; 
+}
+.info{
+    font-size: 15px;
+    color: #877f7f;
+}
+.artist:hover::before {
+    opacity: 1;
+}
+.play-icon {
+    position: absolute;
+    bottom: 1px;
+    right: 5px;
+    width: 60px;
+    height: 60px;
+    display: none;
+}
+.artist:hover .play-icon {
+    display: block;
+}
+.artist > * {
+    position: relative;
+    z-index: 1;
+}
+.artist-info-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2; 
+    padding: 10px; 
+}
+.artist-info {
+    color: white;
+    margin: 0;
+}
+
+*/
+.left-aligned-p {
+    text-align: left;
+}
+
+.text {
+    color: #a1a0a0;
+}
+
+.text:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.text-2 {
+    color: #a1a0a0;
+    font-size: 12px;
+    text-align: left;
+}
+
+#wrapper::-webkit-scrollbar {
+    width: 10px;
+    height: 200px;
+}
+
+#wrapper::-webkit-scrollbar-track {
+    background: #383838;
+}
+
+#wrapper::-webkit-scrollbar-thumb {
+    background: #393737;
+    border-radius: 15px;
+}
+
+#wrapper::-webkit-scrollbar-thumb:hover {
+    background: #383838;
+}
+
+/* This is all Main Content code End*/
+/* This is all Footer Code Start */
+#footer {
+    background: linear-gradient(to right, #e859dc, #6464ce 60%);
+    color: #fff;
+    padding: 10px;
+    font-size: 15px;
+    position: fixed;
+    height: 58px;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.footer-button {
+    padding: 6px 10px;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-button:hover {
+    background-color: #ffffff;
+    transform: scale(1.1);
+    color: #000000;
+}
+
+/* This is all Footer Code End */
+/* Search Page CSS Start*/
+.searchimg {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.search-container {
+    position: relative;
+    display: inline-block;
+}
+
+.search-input {
+    padding: 16px;
+    border: none;
+    right: 80% !important;
+    border-radius: 26px;
+    width: 300px;
+    height: 30px;
+    background-color: #28282a;
+    color: #fff;
+}
+
+.search-icon-container {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+.search-icon {
+    color: white;
+}
+
+/* Search Page CSS End*/
+/* Mobile Device Code Start*/
+@media (max-width: 1224px) {
+    #sidebar {
+        display: none;
+    }
+
+    #sidebarCollapse {
+        display: block;
+        right: 10px;
+        left: auto;
+    }
+
+    header {
+        z-index: 999 !important;
+        width: 100% !important;
+    }
+
+    #wrapper.toggled #sidebar {
+        display: block;
+    }
+
+    #content {
+        margin-left: 0;
+        position: relative;
+    }
+
+    #footer {
+        position: static;
+        position: fixed;
+        height: 85px !important;
+    }
+
+    #wrapper.toggled #sidebar {
+        min-width: 250px;
+    }
+
+    .left-content {
+        position: relative;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .login-signup-buttons .btn {
+        flex: 1;
+        margin-left: 5px;
+    }
+
+    .text-2 {
+        color: #a1a0a0;
+        font-size: 12px;
+        text-align: left;
+        padding-top: 0 !important;
+        padding: 12px;
+    }
+}
+
+/* Mobile Device Code End*/

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Soptify - Web Player: Music for</title>
+  <link rel="icon" href="assets/images/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/css2.css">
+  <!-- <link rel="stylesheet" href="assets/css/all.min.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    @media (max-width: 768px) {
+      .login-signup-buttons {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-dark">
+
+  <!-- Header -->
+  <header>
+    <div class="row">
+      <div class="col-md-10">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/images/logo.png" alt="Your Logo">
+        </a>
+      </div>
+    </div>
+    <div class="row ms-10">
+      <div class="col-md-12">
+        <a href="index.html" class="text-light">
+          <i class="fas fa-arrow-left"></i>
+        </a>
+        <a href="search.html" class="text-light">
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <div class="search-container">
+        <input type="text" id="search" class="search-input" placeholder="What do you want to listen to?">
+        <div class="search-icon-container">
+          <i class="fas fa-search search-icon"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="login-signup-buttons">
+      <button class="btn btn-secondary me-2  signup-button">Signup</button>
+      <button class="btn btn-primary login-button bg-white text-dark">Login</button>
+    </div>
+  </header>
+
+  <!-- Sidebar -->
+  <div id="sidebar">
+    <div class="sidebar">
+      <h5><i class='fab fa-spotify ms-4'></i> Spotify</h5>
+      <ul>
+        <li>
+          <a href="index.html">
+            <div class="text-white"><i class="fas fa-home mr-2"></i> Home</div>
+          </a>
+        </li>
+        <li>
+          <a href="search.html">
+            <div class="text-white"><i class="fas fa-search mr-2"></i> Search</div>
+          </a>
+        </li>
+        <hr class="dark-big-line">
+        <li class="img" data-toggle="tooltip" data-placement="top" title="Sign Up Free">
+          <a href="#" class="text-white" style='font-size:20px'>
+            <i class='fas fa-list mr-2'></i> Library<i class='fas fa-plus float-end'></i>
+          </a>
+        </li>
+      </ul>
+      <div class="card-container">
+        <div class="card-siderbar">
+          <!-- Your first card content goes here -->
+          <h5>Create your first playlist</h5>
+          <p>It's easy, we'll help you</p>
+          <button class="footer-button" data-toggle="tooltip" data-placement="top" title="Log In">Create
+            playlist</button>
+        </div>
+        <div class="card-siderbar">
+          <!-- Your second card content goes here -->
+          <h5>Let's find some podcasts to follow</h5>
+          <p>We'll keep you updated on new episodes</p>
+          <button class="footer-button" data-toggle="tooltip" data-placement="top" title="Log In">Browse
+            podcasts</button>
+        </div>
+      </div>
+      <button class="my-button">Legal</button>
+      <button class="my-button">Privacy Center</button>
+      <button class="my-button">Privacy Policy</button>
+      <button class="my-button">Cookies</button>
+      <button class="my-button">About ads</button>
+      <button class="my-button">Accessibility</button>
+      <br>
+      <button class="ms-3 mt-2 bg-dark text-white globe signup-button"><i class='fas fa-globe'></i> English </button>
+    </div>
+  </div>
+
+  <!-- Page Content -->
+  <div id="wrapper">
+    <div id="content">
+      <div class="container"><br>
+        <div class="row">
+          <div class="col-md-12">
+            <h4 class="mb-4 float-start">Browser all</h4>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-2 mb-4">
+              <a href="search.html">
+                <img class="searchimg" src="assets/images/Podcasts.png" alt="Image 1">
+              </a>
+            </div>
+            <div class="col-sm-2 mb-4">
+              <a href="search.html">
+                <img class="searchimg" src="assets/images/Live Events.png" alt="Image 2">
+              </a>
+            </div>
+            <div class="col-sm-2 mb-4">
+              <a href="search.html">
+                <img class="searchimg" src="assets/images/Made For You.png" alt="Image 3">
+              </a>
+            </div>
+            <div class="col-sm-2 mb-4">
+              <a href="search.html">
+                <img class="searchimg" src="assets/images/New Releases.png" alt="Image 4">
+              </a>
+            </div>
+            <div class="col-sm-2 mb-4">
+              <a href="search.html">
+                <img class="searchimg" src="assets/images/Bollywood.png" alt="Image 5">
+              </a>
+            </div>
+            <div class="col-sm-2 mb-4">
+              <a href="search.html">
+                <img class="searchimg" src="assets/images/Tamil.png" alt="Image 6">
+              </a>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-2 mb-4">
+              <a href="search.html">
+                <img class="searchimg" src="assets/images/Telugu.png" alt="Image 1">
+              </a>
+            </div>
+            <div class="col-sm-2 mb-4">
+              <a href="search.html">
+                <img class="searchimg" src="assets/images/Summer.png" alt="Image 2">
+              </a>
+            </div>
+            <div class="col-sm-2 mb-4">
+              <a href="search.html">
+                <img class="searchimg" src="assets/images/Romance.png" alt="Image 3">
+              </a>
+            </div>
+            <div class="col-sm-2 mb-4">
+              <a href="search.html">
+                <img class="searchimg" src="assets/images/RADAR.png" alt="Image 4">
+              </a>
+            </div>
+            <div class="col-sm-2 mb-4">
+              <a href="search.html">
+                <img class="searchimg" src="assets/images/Punjabi.png" alt="Image 5">
+              </a>
+            </div>
+            <div class="col-sm-2 mb-4">
+              <a href="search.html">
+                <img class="searchimg" src="assets/images/TV & Movies.png" alt="Image 6">
+              </a>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-2 mb-4">
+              <a href="search.html">
+                <img class="searchimg" src="assets/images/Wellness.png" alt="Image 1">
+              </a>
+            </div>
+            <div class="col-sm-2 mb-4">
+              <a href="search.html">
+                <img class="searchimg" src="assets/images/Pop.png" alt="Image 2">
+              </a>
+            </div>
+            <div class="col-sm-2 mb-4">
+              <a href="search.html">
+                <img class="searchimg" src="assets/images/Gaming .png" alt="Image 3">
+              </a>
+            </div>
+            <div class="col-sm-2 mb-4">
+              <a href="search.html">
+                <img class="searchimg" src="assets/images/Marathi.png" alt="Image 4">
+              </a>
+            </div>
+            <div class="col-sm-2 mb-4">
+              <a href="search.html">
+                <img class="searchimg" src="assets/images/Indie.png" alt="Image 5">
+              </a>
+            </div>
+            <div class="col-sm-2 mb-4">
+              <a href="search.html">
+                <img class="searchimg" src="assets/images/Indian Classical.png" alt="Image 6">
+              </a>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-2 mb-4">
+              <a href="search.html">
+                <img class="searchimg" src="assets/images/Fresh Finds.png" alt="Image 1">
+              </a>
+            </div>
+            <div class="col-sm-2 mb-4">
+              <a href="search.html">
+                <img class="searchimg" src="assets/images/EUQAL.png" alt="Image 2">
+              </a>
+            </div>
+            <div class="col-sm-2 mb-4">
+              <a href="search.html">
+                <img class="searchimg" src="assets/images/Discover.png" alt="Image 3">
+              </a>
+            </div>
+            <div class="col-sm-2 mb-4">
+              <a href="search.html">
+                <img class="searchimg" src="assets/images/Devotional.png" alt="Image 4">
+              </a>
+            </div>
+            <div class="col-sm-2 mb-4">
+              <a href="search.html">
+                <img class="searchimg" src="assets/images/Decades.png" alt="Image 5">
+              </a>
+            </div>
+            <div class="col-sm-2 mb-4">
+              <a href="search.html">
+                <img class="searchimg" src="assets/images/Charts.png" alt="Image 6">
+              </a>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-6 col-lg left-aligned-p mb-2">
+                <p>Company</p>
+                <p class="text">About</p>
+                <p class="text">Jobs</p>
+                <p class="text">For the Record</p>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg left-aligned-p mb-2">
+                <p>Communities</p>
+                <p class="text">For Artists</p>
+                <p class="text">Developers</p>
+                <p class="text">Advertising</p>
+                <p class="text">Investors</p>
+                <p class="text">Ventor</p>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg left-aligned-p mb-2">
+                <p>Useful Links</p>
+                <p class="text">Support</p>
+                <p class="text">Free Mobile App</p>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg left-aligned-p mb-2">
+                <p>Spotify Plans</p>
+                <p class="text">Premium Individuals</p>
+                <p class="text">Premium Duo</p>
+                <p class="text">Premium Family</p>
+                <p class="text">Premium Student</p>
+                <p class="text">Spotify Free</p>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg">
+                <div class="d-flex align-items-center justify-content-between">
+                  <a href="#"><i class="fab fa-instagram fa-2x mr-1 text-white"></i></a>
+                  <a href="#"><i class="fab fa-twitter fa-2x mr-1 text-white"></i></a>
+                  <a href="#"><i class="fab fa-facebook fa-2x text-white"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <p class="text-2">© 2024 Spotify AJ</p>
+          <br><br><br><br>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer id="footer" class="text-white">
+    <div class="row footer-content">
+      <div class="col-md-9">
+        <p>PREVIEW OF SPOTIFY<br>
+          Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.
+        </p>
+      </div>
+      <div class="col-md-3 float-end">
+        <a href="#" class="footer-button float-end text-dark">Sign Up Free</a>
+      </div>
+    </div>
+  </footer>
+
+  <!--script -->
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

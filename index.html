@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Soptify - Web Player: Music for</title>
+    <link rel="icon" href="assets/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/css2.css">
+    <!-- <link rel="stylesheet" href="assets/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+    </style>
+</head>
+
+<body class="bg-dark">
+
+    <!-- Header -->
+    <header>
+        <div class="row">
+            <div class="col-md-7">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/logo.png" alt="Your Logo">
+                </a>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <a href="index.html" class="text-light">
+                <i class="fas fa-arrow-left"></i>
+            </a>
+            <a href="search.html" class="text-light">
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+        <div class="login-signup-buttons">
+            <button class="btn btn-secondary me-2 signup-button">Signup</button>
+            <button class="btn btn-primary login-button bg-white text-dark">Login</button>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <div id="sidebar">
+        <div class="sidebar">
+            <h5><i class='fab fa-spotify ms-4'></i> Spotify</h5>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <div class="text-white"><i class="fas fa-home mr-2"></i> Home</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="search.html">
+                        <div class="text-white"><i class="fas fa-search mr-2"></i> Search</div>
+                    </a>
+                </li>
+                <hr class="dark-big-line">
+                <li class="img" data-toggle="tooltip" data-placement="top" title="Sign Up Free">
+                    <a href="#" class="text-white" style='font-size:20px'>
+                        <i class='fas fa-list mr-2'></i> Library<i class='fas fa-plus float-end'></i>
+                    </a>
+                </li>
+            </ul>
+            <div class="card-container">
+                <div class="card-siderbar">
+                    <!-- Your first card content goes here -->
+                    <h5>Create your first playlist</h5>
+                    <p>It's easy, we'll help you</p>
+                    <button class="footer-button" data-toggle="tooltip" data-placement="top" title="Log In">Create
+                        playlist</button>
+                </div>
+                <div class="card-siderbar">
+                    <!-- Your second card content goes here -->
+                    <h5>Let's find some podcasts to follow</h5>
+                    <p>We'll keep you updated on new episodes</p>
+                    <button class="footer-button" data-toggle="tooltip" data-placement="top" title="Log In">Browse
+                        podcasts</button>
+                </div>
+            </div>
+            <button class="my-button">Legal</button>
+            <button class="my-button">Privacy Center</button>
+            <button class="my-button">Privacy Policy</button>
+            <button class="my-button">Cookies</button>
+            <button class="my-button">About ads</button>
+            <button class="my-button">Accessibility</button>
+            <br>
+            <button class="ms-3 mt-2 bg-dark text-white globe signup-button"><i class='fas fa-globe'></i> English
+            </button>
+        </div>
+    </div>
+
+    <!-- Page Content -->
+    <div id="wrapper">
+        <div id="content">
+            <div class="container"><br>
+                <!-- First section -->
+                <div class="row">
+                    <div class="col-md-10">
+                        <h4 class="mb-4 float-start">Popular artists</h4>
+                    </div>
+                    <div class="col-md-2">
+                        <a href="#">
+                            <h6 class="mb-4 float-end" id="see-all">Show all</h6>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-sm-4 col-md-4 col-lg-2 artist">
+                        <div class="image-container p-2">
+                            <img src="assets/images/pritam.jpg" alt="Image 1">
+                            <div class="overlay">
+                                <img src="assets/images/play.png" alt="Play" class="play-icon">
+                            </div>
+                            <p class="left-aligned-p mt-2">Pritam</p>
+                            <p class="left-aligned-p1">Artist</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-4 col-lg-2 artist">
+                        <div class="image-container p-2">
+                            <img src="assets/images/Arijit.jpg" alt="Image 1">
+                            <div class="overlay">
+                                <img src="assets/images/play.png" alt="Play" class="play-icon">
+                            </div>
+                            <p class="left-aligned-p mt-2">Arijit Singh</p>
+                            <p class="left-aligned-p1">Artist</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-4 col-lg-2 artist">
+                        <div class="image-container p-2">
+                            <img src="assets/images/a.r.rahman.jpg" alt="Image 1">
+                            <div class="overlay">
+                                <img src="assets/images/play.png" alt="Play" class="play-icon">
+                            </div>
+                            <p class="left-aligned-p mt-2">A.R.Rahman</p>
+                            <p class="left-aligned-p1">Artist</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-4 col-lg-2 artist">
+                        <div class="image-container p-2">
+                            <img src="assets/images/anirudh.jpg" alt="Image 1">
+                            <div class="overlay">
+                                <img src="assets/images/play.png" alt="Play" class="play-icon">
+                            </div>
+                            <p class="left-aligned-p mt-2">Anirudh Ravichander</p>
+                            <p class="left-aligned-p1">Artist</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-4 col-lg-2 artist">
+                        <div class="image-container p-2">
+                            <img src="assets/images/vishal.jpg" alt="Image 1">
+                            <div class="overlay">
+                                <img src="assets/images/play.png" alt="Play" class="play-icon">
+                            </div>
+                            <p class="left-aligned-p mt-2">Vishal Mishra</p>
+                            <p class="left-aligned-p1">Artist</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-4 col-lg-2 artist">
+                        <div class="image-container p-2">
+                            <img src="assets/images/vishal-shekhar.jpg    " alt="Image 1">
+                            <div class="overlay">
+                                <img src="assets/images/play.png" alt="Play" class="play-icon">
+                            </div>
+                            <p class="left-aligned-p mt-2">Vishal-Shekhar</p>
+                            <p class="left-aligned-p1">Artist</p>
+                        </div>
+                    </div>
+                    <div id="artists-container" style="display: none;">
+                        <div class="row">
+                            <div class="col-6 col-sm-4 col-md-4 col-lg-2 artist">
+                                <div class="image-container p-2">
+                                    <img src="assets/images/vishal.jpg" alt="Image 1">
+                                    <div class="overlay">
+                                        <img src="assets/images/play.png" alt="Play" class="play-icon">
+                                    </div>
+                                    <p class="left-aligned-p mt-2">Vishal Mishra</p>
+                                    <p class="left-aligned-p1">Artist</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-4 col-lg-2 artist">
+                                <div class="image-container p-2">
+                                    <img src="assets/images/vishal-shekhar.jpg" alt="Image 1">
+                                    <div class="overlay">
+                                        <img src="assets/images/play.png" alt="Play" class="play-icon">
+                                    </div>
+                                    <p class="left-aligned-p mt-2">Vishal-Shekhar</p>
+                                    <p class="left-aligned-p1">Artist</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-4 col-lg-2 artist">
+                                <div class="image-container p-2">
+                                    <img src="assets/images/atif.jpg" alt="Image 1">
+                                    <div class="overlay">
+                                        <img src="assets/images/play.png" alt="Play" class="play-icon">
+                                    </div>
+                                    <p class="left-aligned-p mt-2">Atif Aslam</p>
+                                    <p class="left-aligned-p1">Artist</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-4 col-lg-2 artist">
+                                <div class="image-container p-2">
+                                    <img src="assets/images/darshan.jpg" alt="Image 1">
+                                    <div class="overlay">
+                                        <img src="assets/images/play.png" alt="Play" class="play-icon">
+                                    </div>
+                                    <p class="left-aligned-p mt-2">Darshan Raval</p>
+                                    <p class="left-aligned-p1">Artist</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-4 col-lg-2 artist">
+                                <div class="image-container p-2">
+                                    <img src="assets/images/sachin-jigar.jpg" alt="Image 1">
+                                    <div class="overlay">
+                                        <img src="assets/images/play.png" alt="Play" class="play-icon">
+                                    </div>
+                                    <p class="left-aligned-p mt-2">Sachin Jigar</p>
+                                    <p class="left-aligned-p1">Artist</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-4 col-lg-2 artist">
+                                <div class="image-container p-2">
+                                    <img src="assets/images/honey.jpg" alt="Image 1">
+                                    <div class="overlay">
+                                        <img src="assets/images/play.png" alt="Play" class="play-icon">
+                                    </div>
+                                    <p class="left-aligned-p mt-2">Yo Yo Honey singh</p>
+                                    <p class="left-aligned-p1">Artist</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Second section -->
+                <div class="row">
+                    <div class="col-md-10">
+                        <h4 class="mb-4 float-start">Popular albums</h4>
+                    </div>
+                    <div class="col-md-2">
+                        <a href="#">
+                            <h6 class="mb-4 float-end" id="see-all-1">Show all</h6>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-sm-4 col-md-4 col-lg-2 artist">
+                        <div class="image-container1 p-2">
+                            <img src="assets/images/animal.jpg" alt="Image 1">
+                            <div class="overlay">
+                                <img src="assets/images/play.png" alt="Play" class="play-icon">
+                            </div>
+                            <p class="left-aligned-p mt-2">ANIMAL</p>
+                            <p class="left-aligned-p1">Manan Bhardwaj, Vishal Mishra..</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-4 col-lg-2 artist">
+                        <div class="image-container1 p-2">
+                            <img src="assets/images/badshah.jpg" alt="Image 1">
+                            <div class="overlay">
+                                <img src="assets/images/play.png" alt="Play" class="play-icon">
+                            </div>
+                            <p class="left-aligned-p mt-2">Ek Tha Raja</p>
+                            <p class="left-aligned-p1">Badshah</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-4 col-lg-2 artist">
+                        <div class="image-container1 p-2">
+                            <img src="assets/images/moosetap.jpg" alt="Image 1">
+                            <div class="overlay">
+                                <img src="assets/images/play.png" alt="Play" class="play-icon">
+                            </div>
+                            <p class="left-aligned-p mt-2">Moosetap</p>
+                            <p class="left-aligned-p1">Sidhu Moose Wala</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-4 col-lg-2 artist">
+                        <div class="image-container1 p-2">
+                            <img src="assets/images/shubh.jpg" alt="Image 1">
+                            <div class="overlay">
+                                <img src="assets/images/play.png" alt="Play" class="play-icon">
+                            </div>
+                            <p class="left-aligned-p mt-2">Still Rollin</p>
+                            <p class="left-aligned-p1">Shubh</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-4 col-lg-2 artist">
+                        <div class="image-container1 p-2">
+                            <img src="assets/images/aashiqui.jpg" alt="Image 1">
+                            <div class="overlay">
+                                <img src="assets/images/play.png" alt="Play" class="play-icon">
+                            </div>
+                            <p class="left-aligned-p mt-2">Aashiqui 2</p>
+                            <p class="left-aligned-p1">Mithoon, Ankit Tiwari, Jeet Ganguli..</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-4 col-lg-2 artist">
+                        <div class="image-container1 p-2">
+                            <img src="assets/images/heeriye.jpg" alt="Image 1">
+                            <div class="overlay">
+                                <img src="assets/images/play.png" alt="Play" class="play-icon">
+                            </div>
+                            <p class="left-aligned-p mt-2">Heeriye(Feat.Arijit..</p>
+                            <p class="left-aligned-p1">Jasleen Royal, Arijit Singh..</p>
+                        </div>
+                    </div>
+                    <div id="artists-container-1" style="display: none;">
+                        <div class="row">
+                            <div class="col-6 col-sm-4 col-md-4 col-lg-2 artist">
+                                <div class="image-container1 p-2">
+                                    <img src="assets/images/husn.jpg" alt="Image 1">
+                                    <div class="overlay">
+                                        <img src="assets/images/play.png" alt="Play" class="play-icon">
+                                    </div>
+                                    <p class="left-aligned-p mt-2">Husn</p>
+                                    <p class="left-aligned-p1">Anuv Jain</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-4 col-lg-2 artist">
+                                <div class="image-container1 p-2">
+                                    <img src="assets/images/mitraz.jpg" alt="Image 1">
+                                    <div class="overlay">
+                                        <img src="assets/images/play.png" alt="Play" class="play-icon">
+                                    </div>
+                                    <p class="left-aligned-p mt-2">Ankhiyasn Gulaab..</p>
+                                    <p class="left-aligned-p1">Mitraz</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-4 col-lg-2 artist">
+                                <div class="image-container1 p-2">
+                                    <img src="assets/images/naina.jpg" alt="Image 1">
+                                    <div class="overlay">
+                                        <img src="assets/images/play.png" alt="Play" class="play-icon">
+                                    </div>
+                                    <p class="left-aligned-p mt-2">Naina (From "Crew")</p>
+                                    <p class="left-aligned-p1">Diljit Dosanjh, Badshah..</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-4 col-lg-2 artist">
+                                <div class="image-container1 p-2">
+                                    <img src="assets/images/jabwemet.jpg" alt="Image 1">
+                                    <div class="overlay">
+                                        <img src="assets/images/play.png" alt="Play" class="play-icon">
+                                    </div>
+                                    <p class="left-aligned-p mt-2">Jab We Met</p>
+                                    <p class="left-aligned-p1">Various artist</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-4 col-lg-2 artist">
+                                <div class="image-container1 p-2">
+                                    <img src="assets/images/sajni.jpg" alt="Image 1">
+                                    <div class="overlay">
+                                        <img src="assets/images/play.png" alt="Play" class="play-icon">
+                                    </div>
+                                    <p class="left-aligned-p mt-2">Sajani(From Laapata..</p>
+                                    <p class="left-aligned-p1">Ram Samapath, Arijit Singh, Prashant..</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-4 col-lg-2 artist">
+                                <div class="image-container1 p-2">
+                                    <img src="assets/images/Staranga.jpg" alt="Image 1">
+                                    <div class="overlay">
+                                        <img src="assets/images/play.png" alt="Play" class="play-icon">
+                                    </div>
+                                    <p class="left-aligned-p mt-2">Staranga (from</p>
+                                    <p class="left-aligned-p1">Arijit Singh, Shreyas Purnaik, Sidharth..</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Third section -->
+                <div class="row">
+                    <div class="col-md-10">
+                        <h4 class="mb-4 float-start">Featured Charts</h4>
+                    </div>
+                    <div class="col-md-2">
+                        <a href="#">
+                            <h6 class="mb-4 float-end" id="">Show all</h6>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-sm-4 col-md-4 col-lg-2 artist">
+                        <div class="image-container1 p-2">
+                            <img src="assets/images/topglobalsongs.png" alt="Image 1">
+                            <div class="overlay">
+                                <img src="assets/images/play.png" alt="Play" class="play-icon">
+                            </div>
+                            <p class="left-aligned-p mt-2">Top Songs - Global</p>
+                            <p class="left-aligned-p1">Your weekly update of the most played tracks right no..</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-4 col-lg-2 artist">
+                        <div class="image-container1 p-2">
+                            <img src="assets/images/tosongsusa.png" alt="Image 1">
+                            <div class="overlay">
+                                <img src="assets/images/play.png" alt="Play" class="play-icon">
+                            </div>
+                            <p class="left-aligned-p mt-2">Top Songs - USA</p>
+                            <p class="left-aligned-p1">Your weekly update of the most played tracks right no..</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-4 col-lg-2 artist">
+                        <div class="image-container1 p-2">
+                            <img src="assets/images/top50.jpg" alt="Image 1">
+                            <div class="overlay">
+                                <img src="assets/images/play.png" alt="Play" class="play-icon">
+                            </div>
+                            <p class="left-aligned-p mt-2">Top 50 - Global</p>
+                            <p class="left-aligned-p1 text-small">Your daily update of the most played tracks right now
+                                -..</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-4 col-lg-2 artist">
+                        <div class="image-container1 p-2">
+                            <img src="assets/images/top50 2.jpg" alt="Image 1">
+                            <div class="overlay">
+                                <img src="assets/images/play.png" alt="Play" class="play-icon">
+                            </div>
+                            <p class="left-aligned-p mt-2">Top 50 - USA</p>
+                            <p class="left-aligned-p1">Your daily update of the most played tracks right now - USA</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-4 col-lg-2 artist">
+                        <div class="image-container1 p-2">
+                            <img src="assets/images/viral50.jpg" alt="Image 1">
+                            <div class="overlay">
+                                <img src="assets/images/play.png" alt="Play" class="play-icon">
+                            </div>
+                            <p class="left-aligned-p mt-2">Viral 50 - Global</p>
+                            <p class="left-aligned-p1">Your daily update of the most played tracks right now - Global
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-4 col-lg-2 artist">
+                        <div class="image-container1 p-2">
+                            <img src="assets/images/varial50 2.jpg" alt="Image 1">
+                            <div class="overlay">
+                                <img src="assets/images/play.png" alt="Play" class="play-icon">
+                            </div>
+                            <p class="left-aligned-p mt-2">Viral 50 - USA</p>
+                            <p class="left-aligned-p1">Your daily update of the most played tracks right..</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fourth section -->
+                <div class="row">
+                    <div class="col-md-10">
+                        <h4 class="mb-4 float-start">Zzzzzzz</h4>
+                    </div>
+                    <div class="col-md-2">
+                        <a href="#">
+                            <h6 class="mb-4 float-end" id="see-all-2">Show all</h6>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-sm-4 col-md-4 col-lg-2 artist">
+                        <div class="image-container1 p-2">
+                            <img src="assets/images/sleep.jpg" alt="Image 1">
+                            <div class="overlay">
+                                <img src="assets/images/play.png" alt="Play" class="play-icon">
+                            </div>
+                            <p class="left-aligned-p mt-2">Sleep</p>
+                            <p class="left-aligned-p1">Gentle Ambient piano to help you all fall aspleep.</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-4 col-lg-2 artist">
+                        <div class="image-container1 p-2">
+                            <img src="assets/images/night-rain.jpg" alt="Image 1">
+                            <div class="overlay">
+                                <img src="assets/images/play.png" alt="Play" class="play-icon">
+                            </div>
+                            <p class="left-aligned-p mt-2">Night Rain</p>
+                            <p class="left-aligned-p1">Sleep with sounds of pouring rain and..</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-4 col-lg-2 artist">
+                        <div class="image-container1 p-2">
+                            <img src="assets/images/lofi.jpg" alt="Image 1">
+                            <div class="overlay">
+                                <img src="assets/images/play.png" alt="Play" class="play-icon">
+                            </div>
+                            <p class="left-aligned-p mt-2">Lofi</p>
+                            <p class="left-aligned-p1">Insturmental beats for a restful night's sleep.</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-4 col-lg-2 artist">
+                        <div class="image-container1 p-2">
+                            <img src="assets/images/deep.jpg" alt="Image 1">
+                            <div class="overlay">
+                                <img src="assets/images/play.png" alt="Play" class="play-icon">
+                            </div>
+                            <p class="left-aligned-p mt-2">Deep Sleep</p>
+                            <p class="left-aligned-p1">Something, minimalist ambient for a deep sleep.</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-4 col-lg-2 artist">
+                        <div class="image-container1 p-2">
+                            <img src="assets/images/white-noise.jpg" alt="Image 1">
+                            <div class="overlay">
+                                <img src="assets/images/play.png" alt="Play" class="play-icon">
+                            </div>
+                            <p class="left-aligned-p mt-2">White Noise 10..</p>
+                            <p class="left-aligned-p1">Ten hours long continuous white nois..</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-4 col-lg-2 artist">
+                        <div class="image-container1 p-2">
+                            <img src="assets/images/jazz.jpg" alt="Image 1">
+                            <div class="overlay">
+                                <img src="assets/images/play.png" alt="Play" class="play-icon">
+                            </div>
+                            <p class="left-aligned-p mt-2">Jazz for Sleep</p>
+                            <p class="left-aligned-p1">Let these calm Jazz tracks full you to sleep.</p>
+                        </div>
+                    </div>
+                    <div id="artists-container-2" style="display: none;">
+                        <div class="row">
+                            <div class="col-6 col-sm-4 col-md-4 col-lg-2 artist">
+                                <div class="image-container1 p-2">
+                                    <img src="assets/images/brown-noise.jpg" alt="Image 1">
+                                    <div class="overlay">
+                                        <img src="assets/images/play.png" alt="Play" class="play-icon">
+                                    </div>
+                                    <p class="left-aligned-p mt-2">Brown Noise</p>
+                                    <p class="left-aligned-p1">Soothing, low frequences for..</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-4 col-lg-2 artist">
+                                <div class="image-container1 p-2">
+                                    <img src="assets/images/nightstrom.jpg" alt="Image 1">
+                                    <div class="overlay">
+                                        <img src="assets/images/play.png" alt="Play" class="play-icon">
+                                    </div>
+                                    <p class="left-aligned-p mt-2">Nightstorms</p>
+                                    <p class="left-aligned-p1">Hours of comforting sounds of thunder and..</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-4 col-lg-2 artist">
+                                <div class="image-container1 p-2">
+                                    <img src="assets/images/pink-noise.jpg " alt="Image 1">
+                                    <div class="overlay">
+                                        <img src="assets/images/play.png" alt="Play" class="play-icon">
+                                    </div>
+                                    <p class="left-aligned-p mt-2">Pink Noise 10 Hours</p>
+                                    <p class="left-aligned-p1">The perfect frequency for sleep or study-..</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-4 col-lg-2 artist">
+                                <div class="image-container1 p-2">
+                                    <img src="assets/images/dream-forest.jpg" alt="Image 1">
+                                    <div class="overlay">
+                                        <img src="assets/images/play.png" alt="Play" class="play-icon">
+                                    </div>
+                                    <p class="left-aligned-p mt-2">Dremay Forest Music</p>
+                                    <p class="left-aligned-p1">Wander into the magical mix of music, water,..</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-4 col-lg-2 artist">
+                                <div class="image-container1 p-2">
+                                    <img src="assets/images/floating-space.jpg" alt="Image 1">
+                                    <div class="overlay">
+                                        <img src="assets/images/play.png" alt="Play" class="play-icon">
+                                    </div>
+                                    <p class="left-aligned-p mt-2">floating thourgh..</p>
+                                    <p class="left-aligned-p1">Ambient drone to make your feel weightless.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fifth section -->
+                <div class="row">
+                    <div class="col-md-10">
+                        <h4 class="mb-4 float-start">Popular radio</h4>
+                    </div>
+                    <div class="col-md-2">
+                        <a href="#">
+                            <h6 class="mb-4 float-end" id="see-all-3">Show all</h6>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-sm-4 col-md-4 col-lg-2 artist">
+                        <div class="image-container1 p-2">
+                            <img src="assets/images/kk.jpg" alt="Image 1">
+                            <div class="overlay">
+                                <img src="assets/images/play.png" alt="Play" class="play-icon">
+                            </div>
+                            <p class="left-aligned-p mt-2">Kk Radio</p>
+                            <p class="left-aligned-p1">with Mohit Chauhan, Ankit Tiwari, javed Ali..</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-4 col-lg-2 artist">
+                        <div class="image-container1 p-2">
+                            <img src="assets/images/kumar-sanu.jpg" alt="Image 1">
+                            <div class="overlay">
+                                <img src="assets/images/play.png" alt="Play" class="play-icon">
+                            </div>
+                            <p class="left-aligned-p mt-2">Kumar Sanu Radio</p>
+                            <p class="left-aligned-p1">with Udit Narayan, Alka Yagnik, Anuradha..</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-4 col-lg-2 artist">
+                        <div class="image-container1 p-2">
+                            <img src="assets/images/shreya.jpg" alt="Image 1">
+                            <div class="overlay">
+                                <img src="assets/images/play.png" alt="Play" class="play-icon">
+                            </div>
+                            <p class="left-aligned-p mt-2">Shreya Ghoshal</p>
+                            <p class="left-aligned-p1">with Sonu Nigam, Sunidhi Chauhan, Sha..</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-4 col-lg-2 artist">
+                        <div class="image-container1 p-2">
+                            <img src="assets/images/udit-narayan.jpg" alt="Image 1">
+                            <div class="overlay">
+                                <img src="assets/images/play.png" alt="Play" class="play-icon">
+                            </div>
+                            <p class="left-aligned-p mt-2">Udit Narayan Radio</p>
+                            <p class="left-aligned-p1">with Kumar Sanu, Alka Yagnik, Anuradha..</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-4 col-lg-2 artist">
+                        <div class="image-container1 p-2">
+                            <img src="assets/images/jubin.jpg" alt="Image 1">
+                            <div class="overlay">
+                                <img src="assets/images/play.png" alt="Play" class="play-icon">
+                            </div>
+                            <p class="left-aligned-p mt-2">Jubin Nautiyal Radio</p>
+                            <p class="left-aligned-p1">with Payal Dev, Stebin Ben, Tulsi Kumar and..</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-4 col-lg-2 artist">
+                        <div class="image-container1 p-2">
+                            <img src="assets/images/s.p.jpg" alt="Image 1">
+                            <div class="overlay">
+                                <img src="assets/images/play.png" alt="Play" class="play-icon">
+                            </div>
+                            <p class="left-aligned-p mt-2">S.P. Balasubrahmanyam</p>
+                            <p class="left-aligned-p1">with Mano, llaiyaraaja, S.Janki and more</p>
+                        </div>
+                    </div>
+                    <div id="artists-container-3" style="display: none;">
+                        <div class="row">
+                            <div class="col-6 col-sm-4 col-md-4 col-lg-2 artist">
+                                <div class="image-container1 p-2">
+                                    <img src="assets/images/rafi.jpg" alt="Image 1">
+                                    <div class="overlay">
+                                        <img src="assets/images/play.png" alt="Play" class="play-icon">
+                                    </div>
+                                    <p class="left-aligned-p mt-2">Mohammed Rafi..</p>
+                                    <p class="left-aligned-p1">with Mukesh, Kisor Kumar, Asha Bhosale a..</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-4 col-lg-2 artist">
+                                <div class="image-container1 p-2">
+                                    <img src="assets/images/diljit.jpg" alt="Image 1">
+                                    <div class="overlay">
+                                        <img src="assets/images/play.png" alt="Play" class="play-icon">
+                                    </div>
+                                    <p class="left-aligned-p mt-2">Diljit Dosanjh Radio</p>
+                                    <p class="left-aligned-p1">with Garry Sandhu, Ranjit Bava, Amirnder..</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-4 col-lg-2 artist">
+                                <div class="image-container1 p-2">
+                                    <img src="assets/images/kran.jpg" alt="Image 1">
+                                    <div class="overlay">
+                                        <img src="assets/images/play.png" alt="Play" class="play-icon">
+                                    </div>
+                                    <p class="left-aligned-p mt-2">Karan Aujla</p>
+                                    <p class="left-aligned-p1">with Arjan Dhillon, Prem Dhillon, lkky and..</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-4 col-lg-2 artist">
+                                <div class="image-container1 p-2">
+                                    <img src="assets/images/arijitradio.jpg" alt="Image 1">
+                                    <div class="overlay">
+                                        <img src="assets/images/play.png" alt="Play" class="play-icon">
+                                    </div>
+                                    <p class="left-aligned-p mt-2">Arijit Singh Radio</p>
+                                    <p class="left-aligned-p1">with Atif Aslam, Pritam, Kk, and more</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-4 col-lg-2 artist">
+                                <div class="image-container1 p-2">
+                                    <img src="assets/images/sidhu.jpg" alt="Image 1">
+                                    <div class="overlay">
+                                        <img src="assets/images/play.png" alt="Play" class="play-icon">
+                                    </div>
+                                    <p class="left-aligned-p mt-2">Sidhu Moose Wala..</p>
+                                    <p class="left-aligned-p1">with Ammy Virk, Amrit Maan, Karan Aujla and..</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg left-aligned-p mb-2">
+                            <p>Company</p>
+                            <p class="text">About</p>
+                            <p class="text">Jobs</p>
+                            <p class="text">For the Record</p>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg left-aligned-p mb-2">
+                            <p>Communities</p>
+                            <p class="text">For Artists</p>
+                            <p class="text">Developers</p>
+                            <p class="text">Advertising</p>
+                            <p class="text">Investors</p>
+                            <p class="text">Ventor</p>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg left-aligned-p mb-2">
+                            <p>Useful Links</p>
+                            <p class="text">Support</p>
+                            <p class="text">Free Mobile App</p>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg left-aligned-p mb-2">
+                            <p>Spotify Plans</p>
+                            <p class="text">Premium Individuals</p>
+                            <p class="text">Premium Duo</p>
+                            <p class="text">Premium Family</p>
+                            <p class="text">Premium Student</p>
+                            <p class="text">Spotify Free</p>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg">
+                            <div class="float-start">
+                                <a href="#"><i class="fab fa-instagram fa-lg mr-2 text-white"></i></a>
+                                <a href="#"><i class="fab fa-twitter fa-lg mr-2 text-white"></i></a>
+                                <a href="#"><i class="fab fa-facebook fa-lg text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <p class="text-2 mb-2">© 2024 Spotify AJ</p><br><br><br>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" class="text-white">
+        <div class="row footer-content">
+            <div class="col-md-9">
+                <p>PREVIEW OF SPOTIFY<br>
+                    Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.
+                </p>
+            </div>
+            <div class="col-md-3 float-end">
+                <a href="#" class="footer-button float-end text-dark">Sign Up Free</a>
+            </div>
+        </div>
+    </footer>
+
+    <!--script -->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
